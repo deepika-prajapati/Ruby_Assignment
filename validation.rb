@@ -5,12 +5,12 @@ puts("Enter phone number")
 phone=gets.chomp
 puts("Enter file name")
 filename=gets.chomp
-if email.match?('[a-z0-9]+[_a-z0-9\.-]*[a-z0-9]+@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})')
+if email.match?('[_a-z0-9\.-]+@[a-z]+(\.[a-z]+)')
     puts 'Valid Email'
 else
     puts 'Invalid Email'
 end
-if phone.match?('^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$')
+if phone.match?('[0]?(91)?[789]\d{9}$')
     puts "Valid phone number"
 else
 puts "Invalid phone number"
