@@ -1,9 +1,0 @@
-<h1>Employee Details for </h1><h1><%= @employeeInfo.first_Name %></h1>
-<ul>
-  <li><%= link_to "Edit the data", edit_employee_info_path(@employeeInfo) %></li>
-</ul>
-<ul>
-  <li><%= link_to "Delete the data ", employee_info_path(@employeeInfo),
-           "turbo_method": :delete,
-            "turbo-confirm": "Are you sure?" %></li>
-</ul>
